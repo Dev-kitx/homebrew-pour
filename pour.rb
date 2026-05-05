@@ -5,21 +5,21 @@
 class Pour < Formula
   desc "Install skills for any AI agent in one command"
   homepage "https://dev-kitx.github.io/pour-cli/"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.0/pour_0.1.0_darwin_amd64.tar.gz"
-      sha256 "eca0a5e74ef4c86b6c21ed6a54741c3a8e1a3e3c3bcf6de25f5b828b2f20abe7"
+      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.1/pour_0.1.1_darwin_amd64.tar.gz"
+      sha256 "eb71f99cbd8290bf78f813f38107681c8f83f5006d5937ae68a0f369715eff12"
 
       define_method(:install) do
         bin.install "pour"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.0/pour_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b34fdf1307ed0983787d9c79f949748201d239868934d20ccddeb86098d65903"
+      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.1/pour_0.1.1_darwin_arm64.tar.gz"
+      sha256 "873cc5ed8bf0fffbe8e5c851c037532f6134a815e527ca6fc890d02e3fac488b"
 
       define_method(:install) do
         bin.install "pour"
@@ -29,15 +29,15 @@ class Pour < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.0/pour_0.1.0_linux_amd64.tar.gz"
-      sha256 "44bbef8a0b199e57080101f7c3aa95c627e5e121ba2cac8869462e9603a1e5bd"
+      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.1/pour_0.1.1_linux_amd64.tar.gz"
+      sha256 "cedb4cc06c2cbe74a5578f94c816ac7ddccafd12df0b883907909bdd5249ca5c"
       define_method(:install) do
         bin.install "pour"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.0/pour_0.1.0_linux_arm64.tar.gz"
-      sha256 "1dca236a5e9a7a97b4f491d1c6c92fb971ff70ddde3d81f4073af84595d97fb2"
+      url "https://github.com/Dev-kitx/pour-cli/releases/download/v0.1.1/pour_0.1.1_linux_arm64.tar.gz"
+      sha256 "7bc32201b1681fde81a6cd93a3e6a22d3a8c21dac5ecf0ab2736b1989eae6b08"
       define_method(:install) do
         bin.install "pour"
       end
